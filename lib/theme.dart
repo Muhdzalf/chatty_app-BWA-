@@ -12,3 +12,7 @@ TextStyle title =
     TextStyle(fontSize: 20, color: white, fontWeight: FontWeight.bold);
 TextStyle subtitle =
     TextStyle(fontSize: 16, color: black, fontWeight: FontWeight.w400);
+
+// Size
+double small = 50;
+double large = 100;
