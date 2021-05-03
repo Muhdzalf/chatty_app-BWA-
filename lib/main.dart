@@ -1,3 +1,4 @@
+import 'package:chatty_app/screens/chatlistscreen.dart';
 import 'package:chatty_app/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,13 +19,6 @@ class MyApp extends StatelessWidget {
             // Mengubah fonts default flutter
             textTheme:
                 GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)),
-        home: HomePage());
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
+        home: ChatListScreen());
   }
 }
