@@ -7,6 +7,15 @@ class ChatListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+          color: white,
+          size: 30,
+        ),
+        backgroundColor: blue,
+      ),
       body: SafeArea(
         child: Center(
           child: Column(
