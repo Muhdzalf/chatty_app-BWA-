@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Chatty App',
         theme: ThemeData(
-            scaffoldBackgroundColor: blue,
+            scaffoldBackgroundColor: babyblue,
             primarySwatch: Colors.blue,
             // Mengubah fonts default flutter
             textTheme:

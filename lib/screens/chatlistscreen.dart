@@ -14,7 +14,7 @@ class ChatListScreen extends StatelessWidget {
           color: white,
           size: 30,
         ),
-        backgroundColor: blue,
+        backgroundColor: babyblue,
       ),
       body: SafeArea(
         child: Center(
@@ -42,7 +42,7 @@ class ChatListScreen extends StatelessWidget {
               ),
               Text(
                 'Profesional Footballer',
-                style: subtitle.copyWith(color: babyblue),
+                style: subtitle.copyWith(color: white),
               ),
               SizedBox(
                 height: 22.1,
