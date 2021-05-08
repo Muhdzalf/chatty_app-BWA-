@@ -1,4 +1,5 @@
 import 'package:chatty_app/Components/photoprofile.dart';
+import 'package:chatty_app/screens/chatscreen.dart';
 import 'package:flutter/material.dart';
 
 import '../theme.dart';
@@ -18,24 +19,30 @@ class ChatTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: PhotoProfile(
-        size: small,
-        imageUrl: imageUrl,
-      ),
-      title: Text(
-        name,
-        style: chatitle,
-      ),
-      subtitle: Text(
-        message,
-        style: chatext,
-        maxLines: 1,
-        overflow: TextOverflow.ellipsis,
-      ),
-      trailing: Text(
-        time,
-        style: chatext.copyWith(fontWeight: FontWeight.w400),
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => ChatScreen()));
+      },
+      child: ListTile(
+        leading: PhotoProfile(
+          size: small,
+          imageUrl: imageUrl,
+        ),
+        title: Text(
+          name,
+          style: chatitle,
+        ),
+        subtitle: Text(
+          message,
+          style: chatext,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
+        trailing: Text(
+          time,
+          style: chatext.copyWith(fontWeight: FontWeight.w400),
+        ),
       ),
     );
   }
